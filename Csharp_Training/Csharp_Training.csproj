@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="DealsWithError\**" />
+    <Compile Remove="ExceptionHandling\**" />
+    <Compile Remove="ThrowException\**" />
+    <Compile Remove="With_SQL_Server\**" />
+    <EmbeddedResource Remove="DealsWithError\**" />
+    <EmbeddedResource Remove="ExceptionHandling\**" />
+    <EmbeddedResource Remove="ThrowException\**" />
+    <EmbeddedResource Remove="With_SQL_Server\**" />
+    <None Remove="DealsWithError\**" />
+    <None Remove="ExceptionHandling\**" />
+    <None Remove="ThrowException\**" />
+    <None Remove="With_SQL_Server\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.2" />
+  </ItemGroup>
+
+</Project>
